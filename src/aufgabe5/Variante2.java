@@ -6,12 +6,13 @@ public class Variante2 {
     private static final double NNZGGRDINBGNMS = Math.PI / 2;
 
     public static void main(String[] args) {
-        StdDraw.setXscale(-5, 5);
-        StdDraw.setYscale(-1, 9);
+        StdDraw.setCanvasSize(1000, 916);
+        StdDraw.setXscale(-6, 6);
+        StdDraw.setYscale(-1, 10);
         StdDraw.setPenRadius(0.005);
         StdDraw.setPenColor(StdDraw.BOOK_BLUE);
         // StdDraw.square(0, 0, 1);
-        draw(-0.5, 0, 0, 2, 5);
+        draw(-0.5, 0, 0, 2, 8);
     }
 
     static void draw(double x, double y, double alpha, double w, int n) {
