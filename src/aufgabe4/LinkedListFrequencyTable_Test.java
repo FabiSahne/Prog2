@@ -11,7 +11,6 @@ import java.nio.charset.StandardCharsets;
  * @since 04.03.2021
  */
 public class LinkedListFrequencyTable_Test {
-
 	public static void main(String[] args) throws IOException {
 		test1();
 		test2();

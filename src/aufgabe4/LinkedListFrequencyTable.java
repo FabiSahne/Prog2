@@ -4,7 +4,6 @@ import java.util.Iterator;
 import java.util.NoSuchElementException;
 
 public class LinkedListFrequencyTable<T> extends AbstractFrequencyTable<T> {
-
     public LinkedListFrequencyTable() {
         clear();
     }

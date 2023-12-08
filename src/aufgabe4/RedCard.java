@@ -3,7 +3,6 @@ package aufgabe4;
 import java.util.Random;
 
 public class RedCard extends Card{
-
     public RedCard(){
         Random r = new Random();
         suit = Suit.values()[r.nextInt(2)];

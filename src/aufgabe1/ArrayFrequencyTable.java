@@ -1,7 +1,5 @@
 package aufgabe1;
 
-// import aufgabe1.AbstractFrequencyTable;
-// import aufgabe1.Word;
 import java.util.Arrays;
 
 /**
@@ -11,7 +9,7 @@ import java.util.Arrays;
 public class ArrayFrequencyTable extends AbstractFrequencyTable {
 
     private int size = 0;
-    private Word fqTable[];
+    private Word[] fqTable;
     private final int DEFAULT_SIZE = 100;
 
     public ArrayFrequencyTable() {

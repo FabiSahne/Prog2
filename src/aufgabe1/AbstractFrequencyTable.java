@@ -41,13 +41,13 @@ public abstract class AbstractFrequencyTable implements FrequencyTable {
 		StringBuilder s = new StringBuilder("{");
 		// Ihr Code:
 		for (int i = 0; i < size(); i++) {
-			s.append(get(i).getWord() + ":");
+			s.append(get(i).getWord()).append(":");
 			s.append(get(i).getFrequency());
 			if (i < size() - 1) {
 				s.append(", ");
 			}
 		}
-		s.append("} size = " + size());
+		s.append("} size = ").append(size());
 		return s.toString();
 	}
 }
