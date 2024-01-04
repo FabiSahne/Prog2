@@ -151,11 +151,26 @@ public class GUI {
             }
         });
         hochButton.addActionListener(e -> {
-            String x = operandXField.getText();
-            String y = operandYField.getText();
-            String result = "";
-            result = String.valueOf(Math.pow(Double.parseDouble(x), Double.parseDouble(y)));
-            resultatField.setText(result);
+            double x;
+            double y;
+            String result = "0";
+            try {
+                x = Double.parseDouble(operandXField.getText());
+            } catch (NumberFormatException ex) {
+                System.out.println("Falsche Eingabe: " + ex);
+                operandXField.setForeground(Color.RED);
+                resultatField.setText(result);
+                return;
+            }
+            try {
+                y = Double.parseDouble(operandYField.getText());
+                result = String.valueOf(Math.pow(x, y));
+                resultatField.setText(result);
+            } catch (NumberFormatException ex) {
+                System.out.println("Falsche Eingabe: " + ex);
+                operandYField.setForeground(Color.RED);
+                resultatField.setText(result);
+            }
         });
         log2Button.addActionListener(e -> {
             String x = operandXField.getText();
