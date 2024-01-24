@@ -11,8 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/aufgabe5" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/aufgabe6" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Workshop1_2023_Collections" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/src/Workshop1_2023_Collections/data" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/workshop1/data" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/workshop2/data" type="java-resource" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

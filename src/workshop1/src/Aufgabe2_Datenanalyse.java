@@ -1,4 +1,4 @@
-package src;
+package workshop1.src;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -18,7 +18,7 @@ public class Aufgabe2_Datenanalyse {
         // Geben Sie die Liste (jeder Landkreis in eine Zeile) aus und bestimmen Sie die Anzahl der Landkreise.
         System.out.println("\nAufgabe 2a (2P):");
         // Ihr Code
-        List<Landkreis> LKS = einlesen("/home/fabian/htwg/Prog2/src/Workshop1_2023_Collections/data/12411-0017-KREISE_$F.csv");
+        List<Landkreis> LKS = einlesen("/home/fabian/htwg/Prog2/src/workshop1/data/12411-0017-KREISE_$F.csv");
         int anzahl = 0;
         for (Landkreis l : LKS) {
             System.out.println(l.name());
@@ -67,7 +67,7 @@ public class Aufgabe2_Datenanalyse {
         // Ihr Code
         // ...
         Set<String> lkrsnm = landkarte.keySet();
-        for (String i : lkrsnm){
+        for (String i : lkrsnm) {
             System.out.println(i);
         }
     }

@@ -1,4 +1,4 @@
-package src;
+package workshop2.src;
 
 import java.util.Arrays;
 import java.util.List;

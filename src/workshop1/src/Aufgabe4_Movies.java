@@ -1,4 +1,4 @@
-package src;
+package workshop1.src;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ public class Aufgabe4_Movies {
         // Die record-Klasse Movie stellt zwei Konstruktoren zur Verfügung.
         // Testen Sie die beiden Konstruktoren und erklären Sie die Funktionsweise.
         System.out.println("\nAufgabe 4a (1P):");
-        Movie movie1 = new Movie("101 Dalmatians", List.of("Benfield, John", "Braid, Hilda", "Capron, Brian"),1996);
+        Movie movie1 = new Movie("101 Dalmatians", List.of("Benfield, John", "Braid, Hilda", "Capron, Brian"), 1996);
         Movie movie2 = new Movie("101 Dalmatians (1996)/Benfield, John/Braid, Hilda/Capron, Brian");
         // Ausgabe von m1 und m2 sollte identisch sein:
         System.out.println(movie1);
@@ -27,10 +27,10 @@ public class Aufgabe4_Movies {
         // Geben Sie alle Filme nach Jahreszahlen sortiert aus.
         // Geben Sie dabei zuerst die Jahreszahl und dann den Filmtitel in einer Zeile aus (Schauspieler werden weggelassen).
         System.out.println("\nAufgabe 4b (2P):");
-        List<Movie> movieList = einlesen("/home/fabian/htwg/Prog2/src/Workshop1_2023_Collections/data/movies-top-grossing.txt");
+        List<Movie> movieList = einlesen("/home/fabian/htwg/Prog2/src/workshop1/data/movies-top-grossing.txt");
         // ...
         movieList.sort(Comparator.comparingInt(Movie::year));
-        for (Movie m : movieList){
+        for (Movie m : movieList) {
             System.out.println(m.year() + " " + m.title());
         }
 
@@ -54,8 +54,8 @@ public class Aufgabe4_Movies {
 
         for (Map.Entry<Integer, Set<String>> entry : jahrToTitel.entrySet()) {
             System.out.println(entry.getKey());
-            for (String s : entry.getValue()){
-                System.out.println("\t"+s);
+            for (String s : entry.getValue()) {
+                System.out.println("\t" + s);
             }
         }
 
@@ -69,10 +69,10 @@ public class Aufgabe4_Movies {
         System.out.println("\nAufgabe 4d (5P):");
         SortedMap<String, Set<String>> actorToTitel = new TreeMap<>();
         // ...
-        for (Movie m : movieList){
-            for (String s : m.actors()){
+        for (Movie m : movieList) {
+            for (String s : m.actors()) {
                 Set<String> mo;
-                if(!actorToTitel.containsKey(s)) {
+                if (!actorToTitel.containsKey(s)) {
                     mo = new TreeSet<>();
                 } else {
                     mo = actorToTitel.get(s);
@@ -84,7 +84,7 @@ public class Aufgabe4_Movies {
         for (Map.Entry<String, Set<String>> entry : actorToTitel.entrySet()) {
             System.out.println(entry.getKey());
             for (String s : entry.getValue()) {
-                System.out.println("\t"+s);
+                System.out.println("\t" + s);
             }
         }
 

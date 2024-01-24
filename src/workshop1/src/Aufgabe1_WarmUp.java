@@ -1,4 +1,4 @@
-package src;
+package workshop1.src;
 
 import java.util.*;
 
@@ -72,7 +72,7 @@ public class Aufgabe1_WarmUp {
 
     private static <T> List<T> removeDuplicates(List<T> l) {
         List<T> lo = new ArrayList<>();
-        for (T i : l){
+        for (T i : l) {
             if (!lo.contains(i)) {
                 lo.add(i);
             }
@@ -96,7 +96,7 @@ public class Aufgabe1_WarmUp {
         objList.add("Test");
         objList.add(34.56);
         objList.add(1.1);
-        objList.add(List.of(1,2,3));
+        objList.add(List.of(1, 2, 3));
         objList.add(4);
         objList.add(4);
 
@@ -134,8 +134,8 @@ public class Aufgabe1_WarmUp {
 
     private static <T> Set<T> findCommon(Collection<? extends T> a, Collection<? extends T> b) {
         Set<T> l = new HashSet<>();
-        for (T i : a){
-            if (b.contains(i)){
+        for (T i : a) {
+            if (b.contains(i)) {
                 l.add(i);
             }
         }
